@@ -4,7 +4,7 @@ Spyder is a Bash based script which is officially made for Phishing Facebook Acc
 
 ## Tool Screenshot
 
-![Alt text](https://raw.githubusercontent.com/Cold-Breazy/spyder/main/Screenshot_20220522-091520_Termux.jpg "screenshot")
+![Alt text](https://raw.githubusercontent.com/Cold-Breazy/spyder/main/Screenshot_20220716-091914_Termux.jpg "screenshot")
 
 ## AVAILABLE ON :
 
