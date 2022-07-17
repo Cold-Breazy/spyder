@@ -34,7 +34,8 @@ Spyder is a Bash based script which is officially made for Phishing Facebook Acc
 * ` bash install.sh `
 * ` bash spyder.sh `
 
-
+## Total Tool Views?
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fcold-breazy%2Fspyder&count_bg=%23FF6C1D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
 ## Join Our Whatsapp Group
 ### Find us On :
